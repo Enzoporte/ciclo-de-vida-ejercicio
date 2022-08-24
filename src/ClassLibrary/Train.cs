@@ -30,7 +30,7 @@ namespace ClassLibrary
             count++;
         }
         
-        public int Count
+        public static int Count
         {
             get 
             {
