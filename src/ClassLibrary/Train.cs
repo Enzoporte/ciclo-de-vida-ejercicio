@@ -84,6 +84,7 @@ namespace ClassLibrary
         ~Train()
         {
             count--;
+            Console.WriteLine("Destruyendo... ");
         } 
     }
 }

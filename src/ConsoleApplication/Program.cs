@@ -19,11 +19,24 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            for (int i = 0; i < 100; i++)
+            // Va destruyendo a medida que se queda sin memoria para guardar más trenes
+
+            /*
+            for (int i = 0; i < 10000000; i++)
             {
                 var train = new Train("Thomas");
+                
             }
             Console.WriteLine(Train.Count); 
+            */
+
+            Train t1 = new Train("Last Train To London");
+            Train t2 = new Train("Last Train To London");
+            Train t3 = new Train("Runaway Train");
+
+            // Falso las dos. Son instancias distintas aunq compartan nombre
+            Console.WriteLine(t1 == t2);
+            Console.WriteLine(t2 == t3);
         }
     }
 }
